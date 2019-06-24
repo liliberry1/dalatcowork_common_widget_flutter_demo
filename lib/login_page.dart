@@ -1,3 +1,4 @@
+import 'package:common_widget_flutter/recycler_view.dart';
 import 'package:common_widget_flutter/register_page.dart';
 import 'package:flutter/material.dart';
 
@@ -105,6 +106,7 @@ class _LoginPageState extends State<LoginPage> {
                     GestureDetector(
                       onTap: () {
                         print("This is arrow forward");
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => RecyclerView()));
                       },
                       child: Container(
                         margin: EdgeInsets.only(right: size.width*(1/7)),

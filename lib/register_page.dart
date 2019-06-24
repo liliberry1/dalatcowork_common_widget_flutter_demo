@@ -1,3 +1,4 @@
+import 'package:common_widget_flutter/recycler_view.dart';
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -148,6 +149,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   GestureDetector(
                     onTap: () {
                       print("This is arrow forward");
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => RecyclerView()));
                     },
                     child: Container(
                       margin: EdgeInsets.only(right: size.width*(1/8)),
