@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'utils.dart';
 import 'gird_view.dart';
+import 'photo_gallery.dart';
 
 class RecyclerView extends StatefulWidget {
   String source =
@@ -34,8 +35,9 @@ class _RecyclerViewState extends State<RecyclerView> {
               Icons.arrow_forward,
               color: Colors.white,
             ),
-            onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=> PhotoGrid()));
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => PhotoGallery()));
             },
           )
         ],
