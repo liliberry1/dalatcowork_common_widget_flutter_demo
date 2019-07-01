@@ -1,4 +1,4 @@
-import 'package:common_widget_flutter/recycler_view.dart';
+import 'package:common_widget_flutter/temp_view.dart';
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatefulWidget {
